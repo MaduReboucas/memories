@@ -9,7 +9,7 @@ async function main() {
     `mongodb+srv://${process.env.DBUSER}:${process.env.DBPASS}@cluster0.dttdgsx.mongodb.net/?appName=Cluster0`,
   );
 
-  console.log("Conectado!");
+  console.log("Conectado! - conn");
 }
 
 main().catch((err) => console.log(err));

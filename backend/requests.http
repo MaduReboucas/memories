@@ -1,0 +1,11 @@
+@baseUrl = http://localhost:3000
+
+### Create memory
+POST {{baseUrl}}/memories
+Content-Type: application/json
+
+{
+  "title": "Minha memoria",
+  "description": "Teste de criacao",
+  "image": "https://example.com/image.jpg"
+}
