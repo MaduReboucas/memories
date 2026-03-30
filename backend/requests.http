@@ -59,3 +59,12 @@ Content-Type: image/jpeg
 
 ### Toggle favorite
 PATCH {{baseUrl}}/memories/favorite/SEU_ID_AQUI
+
+### Add comment
+PATCH {{baseUrl}}/memories/comment/SEU_ID_AQUI
+Content-Type: application/json
+
+{
+  "name": "Matheus",
+  "text": "Algum comentário"
+}
