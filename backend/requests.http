@@ -56,3 +56,6 @@ Content-Type: image/jpeg
 
 < ./images/foto.jpg
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Toggle favorite
+PATCH {{baseUrl}}/memories/favorite/SEU_ID_AQUI
