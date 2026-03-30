@@ -31,3 +31,6 @@ Content-Type: image/jpeg
 
 ### Get memories
 GET {{baseUrl}}/memories
+
+### Get memory by id
+GET {{baseUrl}}/memories/SEU_ID_AQUI
