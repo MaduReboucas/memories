@@ -34,3 +34,6 @@ GET {{baseUrl}}/memories
 
 ### Get memory by id
 GET {{baseUrl}}/memories/SEU_ID_AQUI
+
+### Delete memory by id
+DELETE {{baseUrl}}/memories/SEU_ID_AQUI
