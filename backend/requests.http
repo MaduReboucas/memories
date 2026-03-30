@@ -9,3 +9,25 @@ Content-Type: application/json
   "description": "Teste de criacao",
   "image": "https://example.com/image.jpg"
 }
+
+### Create memory (multipart)
+POST {{baseUrl}}/memories
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="title"
+
+Minha memoria
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="description"
+
+Teste de criacao
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="foto.jpg"
+Content-Type: image/jpeg
+
+< ./images/foto.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### Get memories
+GET {{baseUrl}}/memories
