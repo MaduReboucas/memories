@@ -18,7 +18,7 @@ const createMemory = async (req, res) => {
 
     const src = `images/${req.file.filename}`;
 
-    if (!title || description) {
+    if (!title || !description) {
       return res.status(400).json({ mag: "Por favor, preencha todos campos." });
     }
 
@@ -30,7 +30,7 @@ const createMemory = async (req, res) => {
 
     await newMemory.save();
 
-    res.json({ msg: "Memória criada com sucesso!", newMemmory });
+    res.json({ msg: "Memória criada com sucesso!", newMemory });
   } catch (error) {
     console.log(error.mensage);
     res.status(500).send("Ocorreu um erro!");
